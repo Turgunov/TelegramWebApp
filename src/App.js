@@ -43,7 +43,7 @@ function App() {
 
   const onCheckout = () => {
     tele.MainButton.text = "Confirm Order";
-    tele.MainButton.onClick(() => ctx.reply("Order Completed"));
+    tele.MainButton.onClick((ctx) => ctx.reply("Order Completed"));
     tele.MainButton.show();
   };
 
